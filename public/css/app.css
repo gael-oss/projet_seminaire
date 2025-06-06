@@ -1,0 +1,167 @@
+/* public/css/app.css */
+
+/* 1) On applique l’image de fond à TOUTES les pages */
+body {
+  background: url('/img/background.jpg') no-repeat center/cover;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2) Wrapper principal (glassmorphism) pour le contenu centré */
+.wrapper,
+.content-wrapper {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+/* 3) Header/Nav */
+.site-header {
+  background: rgba(0, 0, 0, 0.5);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.nav-logo {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* 4) Zone de contenu */
+.site-content {
+  padding: 2rem;
+}
+
+/* 5) Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+/* 6) Boutons génériques */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  color: #333;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* 7) Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+}
+th {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 8) Formulaires d’inscription (/register) */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.register-wrapper .form-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+}
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.input-box {
+  margin-bottom: 1.2rem;
+}
+.input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.input-box input,
+.input-box select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.error {
+  color: #ffaaaa;
+  font-size: 0.9rem;
+}
+.submit-btn {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #f0f0f0;
+}
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+.register-link a {
+  color: #fff;
+  text-decoration: underline;
+}
